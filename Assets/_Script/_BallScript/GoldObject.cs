@@ -15,7 +15,13 @@ public class GoldObject : MonoBehaviour
     [SerializeField] private Rigidbody rb;
     
     [SerializeField] private GameObject shine;
+    public bool isClickable = true;
 
+
+    private void Start()
+    {
+        isClickable = true;
+    }
     // Level completion logic
     public void CompleteLevel()
     {
@@ -65,7 +71,17 @@ public class GoldObject : MonoBehaviour
     // Detect mouse click on the gold object
     private void OnMouseDown()
     {
-        // If the gold object is clicked, complete the level and animate it
-        CompleteLevel();
+        // Only allow clicking if the object is clickable
+        if (isClickable)
+        {
+            CompleteLevel(); // Call the method to complete the level
+            isClickable = false; // Set the flag to false so it can't be clicked again
+        }
+    }
+
+    // Optionally, you can use this method to enable the object to be clickable again later
+    public void SetClickable(bool clickable)
+    {
+        isClickable = clickable;
     }
 }

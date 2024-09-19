@@ -4503,6 +4503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c16a852dcbad6f42be8434b8bbcfe73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goldObject: {fileID: 2055222518}
   countdownTime: 30
   countdownText: {fileID: 508956975}
   isCountdownRunning: 1
@@ -4727,6 +4728,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7748671963346249845, guid: abe404838ed310140928d286e956ea09, type: 3}
   m_PrefabInstance: {fileID: 3941863114954763435}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2055222518 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2590061974556993420, guid: abe404838ed310140928d286e956ea09, type: 3}
+  m_PrefabInstance: {fileID: 3941863114954763435}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055222515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a282de80827d98448a7e6532178535a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &712442794028982839
 MonoBehaviour:
   m_ObjectHideFlags: 0

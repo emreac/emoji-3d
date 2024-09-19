@@ -5,6 +5,8 @@ using DG.Tweening;
 
 public class CountdownTimer : MonoBehaviour
 {
+    [SerializeField] private GoldObject goldObject;
+
     public float countdownTime = 30f;
     public TextMeshProUGUI countdownText;
     public bool isCountdownRunning = true;
@@ -67,7 +69,8 @@ public class CountdownTimer : MonoBehaviour
 
     private void GameOver()
     {
-        // Disable dragging
+        // Disable dragging and clickable
+        goldObject.isClickable = false;
         DraggableBall.isGameCompleted = true;
         loseUI.SetActive(true);
         Debug.Log("Game Over! Time's up!");
