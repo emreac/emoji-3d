@@ -18,6 +18,8 @@ public class DraggableBall : MonoBehaviour
 
     void Start()
     {
+        
+
         // Get the reference to the ColorBallDestroyer attached to the same object
         ballDestroyer = GetComponent<ColorBallDestroyer>();
 

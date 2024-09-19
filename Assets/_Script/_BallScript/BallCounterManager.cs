@@ -3,15 +3,18 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using DG.Tweening;
 
-
 public class BallCounterManager : MonoBehaviour
 {
+    [SerializeField] private PopSoundManager popSound;
     public static BallCounterManager Instance;
     private int destroyedBallCount = 0;
     public TextMeshProUGUI ballCounterText;
-
+    
+  
+    //[SerializeField] private PopSoundManager popSoundManager;
     void Awake()
     {
+        
         if (Instance == null)
         {
             Instance = this;
@@ -28,6 +31,9 @@ public class BallCounterManager : MonoBehaviour
     // Callback when a scene is loaded
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        //Reassing the sound manager
+        popSound = GameObject.Find("PopSoundManager").GetComponent<PopSoundManager>();
+
         // Reassign the UI element after the new scene is loaded
         ballCounterText = GameObject.Find("BallCounterText")?.GetComponent<TextMeshProUGUI>();
 
@@ -41,9 +47,12 @@ public class BallCounterManager : MonoBehaviour
     }
     public void AddDestroyedBall()
     {
+        
+        popSound.PlayRandomPopSound();
         destroyedBallCount++;
         UpdateCounterText();
-       
+        DOTween.Restart("StarScale");
+
       
     }
 

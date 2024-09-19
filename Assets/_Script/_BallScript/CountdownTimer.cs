@@ -5,7 +5,6 @@ using DG.Tweening;
 
 public class CountdownTimer : MonoBehaviour
 {
-
     public float countdownTime = 30f;
     public TextMeshProUGUI countdownText;
     public bool isCountdownRunning = true;
@@ -16,7 +15,6 @@ public class CountdownTimer : MonoBehaviour
 
     void Start()
     {
-        
         DraggableBall.isGameCompleted = false;
         StartCoroutine(StartCountdown());
     }
@@ -40,7 +38,7 @@ public class CountdownTimer : MonoBehaviour
             yield return new WaitForSeconds(1f);
             remainingTime--;
 
-            if (isGameComplete) break; // Stop if game is complete
+            if (isGameComplete) break; // Stop if the game is complete
         }
 
         if (countdownText != null)
@@ -56,13 +54,11 @@ public class CountdownTimer : MonoBehaviour
 
     public void CompleteGame()
     {
-
         DraggableBall.isGameCompleted = true;
         isGameComplete = true; // Mark the game as complete
         StopCountdown();
         StartCoroutine(AddBallsForLeftoverTime()); // Add balls one by one
     }
-
 
     public void StopCountdown()
     {
@@ -71,7 +67,7 @@ public class CountdownTimer : MonoBehaviour
 
     private void GameOver()
     {
-        //Disable dragging
+        // Disable dragging
         DraggableBall.isGameCompleted = true;
         loseUI.SetActive(true);
         Debug.Log("Game Over! Time's up!");
@@ -79,22 +75,23 @@ public class CountdownTimer : MonoBehaviour
 
     private IEnumerator AddBallsForLeftoverTime()
     {
+        // Store the initial remaining time so that the correct amount of balls are added
+        int initialRemainingTime = Mathf.FloorToInt(remainingTime);
+
         yield return new WaitForSeconds(1);
 
         // For each leftover second, add one ball
-        while (remainingTime > 0)
+        for (int i = 0; i < initialRemainingTime; i++)
         {
             // Add the ball to the destroyed ball count
             BallCounterManager.Instance.AddDestroyedBall();
-            
+
             // Update the countdown text to reflect the remaining leftover time
+            remainingTime--;
             if (countdownText != null)
             {
                 countdownText.text = remainingTime.ToString("F0");
             }
-
-            // Decrease the remaining time and update the UI
-            remainingTime--;
 
             yield return new WaitForSeconds(0.05f); // Delay for adding each ball
         }

@@ -4,7 +4,8 @@ using DG.Tweening; // Import DoTween
 
 public class GoldObject : MonoBehaviour
 {
-   
+    [SerializeField] private PopSoundManager popSoundManager;
+    [SerializeField] private UILeftOverTextAnim uiLeftTextAnim;  
     [SerializeField] private CountdownTimer countdownTimer;
     public Vector3 targetPosition;  // The position to move the gold object to
     public float moveDuration = 1f; // Duration of the move animation
@@ -18,7 +19,8 @@ public class GoldObject : MonoBehaviour
     // Level completion logic
     public void CompleteLevel()
     {
-       
+
+        uiLeftTextAnim.LeftOverUIAnimation();
         // Replace this with your actual level completion logic
         Debug.Log("Level Completed!");
         //Physics.gravity = new Vector3(0, 0, 0);
@@ -26,7 +28,7 @@ public class GoldObject : MonoBehaviour
         countdownTimer.CompleteGame();
         shine.SetActive(true);
         DisableRigidbody();
-  
+        popSoundManager.PlayWin();
 
         // Animate the movement and scale of the gold object using DoTween
         Sequence sequence = DOTween.Sequence(); // Create a DoTween sequence
