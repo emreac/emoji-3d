@@ -16,6 +16,8 @@ TagManager:
   - GreenBall
   - PinkBall
   - YellowLove
+  - BrawnBall
+  - WhiteBall
   layers:
   - Default
   - TransparentFX
