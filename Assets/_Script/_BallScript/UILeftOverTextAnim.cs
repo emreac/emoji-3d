@@ -15,7 +15,7 @@ public class UILeftOverTextAnim : MonoBehaviour
     public void LeftOverUIAnimation()
     {
         DOTween.Restart("LeftOverText");
-        leftoverText.text = "+" + Mathf.Round(countdownTimer.remainingTime / 2);
+        leftoverText.text = "+" + Mathf.Round(countdownTimer.remainingTime);
     }
     
 }

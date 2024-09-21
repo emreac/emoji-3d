@@ -37,4 +37,8 @@ public class LevelManager : MonoBehaviour
         BallCounterManager.Instance.UpdateCounterText();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    public void GoLevel1()
+    {
+        SceneManager.LoadScene("Level1");
+    } 
 }

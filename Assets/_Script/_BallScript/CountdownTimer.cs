@@ -15,8 +15,11 @@ public class CountdownTimer : MonoBehaviour
     public float remainingTime; // Store remaining time here
     private bool isGameComplete = false; // Track if the game is completed
 
+
+
     void Start()
     {
+
         DraggableBall.isGameCompleted = false;
         StartCoroutine(StartCountdown());
     }
@@ -91,6 +94,13 @@ public class CountdownTimer : MonoBehaviour
 
             // Update the countdown text to reflect the remaining leftover time
             remainingTime--;
+
+            // Ensure remainingTime doesn't go below 0
+            if (remainingTime < 0)
+            {
+                remainingTime = 0;
+            }
+
             if (countdownText != null)
             {
                 countdownText.text = remainingTime.ToString("F0");

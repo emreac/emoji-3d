@@ -68,7 +68,7 @@ public class BallCounterManager : MonoBehaviour
         if (ballCounterText != null)
         {
             //Debug.Log("Updating ball count: " + destroyedBallCount);
-            ballCounterText.text = (destroyedBallCount / 2).ToString();
+            ballCounterText.text = (destroyedBallCount).ToString();
         }
     }
 

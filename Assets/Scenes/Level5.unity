@@ -2315,6 +2315,8 @@ GameObject:
   - component: {fileID: 1005236462}
   - component: {fileID: 1005236467}
   - component: {fileID: 1005236466}
+  - component: {fileID: 1005236468}
+  - component: {fileID: 1005236469}
   m_Layer: 5
   m_Name: LeftoverText
   m_TagString: Untagged
@@ -2334,12 +2336,12 @@ RectTransform:
   m_LocalScale: {x: 1.6859001, y: 1.6859001, z: 1.6859001}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1953113455}
+  m_Father: {fileID: 1792446634}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 161.55, y: 62.833}
+  m_SizeDelta: {x: 161.54999, y: 62.833}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1005236462
 MonoBehaviour:
@@ -2650,6 +2652,222 @@ MonoBehaviour:
   useTargetAsV3: 0
   endValueFloat: 0
   endValueV3: {x: 0, y: 0, z: 0}
+  endValueV2: {x: 0, y: 0}
+  endValueColor: {r: 1, g: 1, b: 1, a: 1}
+  endValueString: 
+  endValueRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  endValueTransform: {fileID: 0}
+  optionalBool0: 0
+  optionalBool1: 0
+  optionalFloat0: 0
+  optionalInt0: 0
+  optionalRotationMode: 0
+  optionalScrambleMode: 0
+  optionalShakeRandomnessMode: 0
+  optionalString: 
+--- !u!114 &1005236468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005236460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0390bd8b8ffd640b34fe25065ff1df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateType: 0
+  isSpeedBased: 0
+  hasOnStart: 0
+  hasOnPlay: 0
+  hasOnUpdate: 0
+  hasOnStepComplete: 0
+  hasOnComplete: 0
+  hasOnTweenCreated: 0
+  hasOnRewind: 0
+  onStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onPlay:
+    m_PersistentCalls:
+      m_Calls: []
+  onUpdate:
+    m_PersistentCalls:
+      m_Calls: []
+  onStepComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  onComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  onTweenCreated:
+    m_PersistentCalls:
+      m_Calls: []
+  onRewind:
+    m_PersistentCalls:
+      m_Calls: []
+  targetIsSelf: 1
+  targetGO: {fileID: 0}
+  tweenTargetIsTargetGO: 1
+  delay: 2
+  duration: 1
+  easeType: 6
+  easeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  loopType: 0
+  loops: 1
+  id: LeftOverText
+  isRelative: 0
+  isFrom: 0
+  isIndependentUpdate: 0
+  autoKill: 0
+  autoGenerate: 1
+  isActive: 1
+  isValid: 1
+  target: {fileID: 1005236463}
+  animationType: 7
+  targetType: 3
+  forcedTargetType: 0
+  autoPlay: 0
+  useTargetAsV3: 0
+  endValueFloat: 0
+  endValueV3: {x: 0, y: 0, z: 0}
+  endValueV2: {x: 0, y: 0}
+  endValueColor: {r: 1, g: 1, b: 1, a: 1}
+  endValueString: 
+  endValueRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  endValueTransform: {fileID: 0}
+  optionalBool0: 0
+  optionalBool1: 0
+  optionalFloat0: 0
+  optionalInt0: 0
+  optionalRotationMode: 0
+  optionalScrambleMode: 0
+  optionalShakeRandomnessMode: 0
+  optionalString: 
+--- !u!114 &1005236469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005236460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0390bd8b8ffd640b34fe25065ff1df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateType: 0
+  isSpeedBased: 0
+  hasOnStart: 0
+  hasOnPlay: 0
+  hasOnUpdate: 0
+  hasOnStepComplete: 0
+  hasOnComplete: 0
+  hasOnTweenCreated: 0
+  hasOnRewind: 0
+  onStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onPlay:
+    m_PersistentCalls:
+      m_Calls: []
+  onUpdate:
+    m_PersistentCalls:
+      m_Calls: []
+  onStepComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  onComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  onTweenCreated:
+    m_PersistentCalls:
+      m_Calls: []
+  onRewind:
+    m_PersistentCalls:
+      m_Calls: []
+  targetIsSelf: 1
+  targetGO: {fileID: 0}
+  tweenTargetIsTargetGO: 1
+  delay: 1
+  duration: 1
+  easeType: 6
+  easeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  loopType: 0
+  loops: 1
+  id: LeftOverText
+  isRelative: 0
+  isFrom: 0
+  isIndependentUpdate: 0
+  autoKill: 0
+  autoGenerate: 1
+  isActive: 1
+  isValid: 1
+  target: {fileID: 1005236461}
+  animationType: 1
+  targetType: 5
+  forcedTargetType: 0
+  autoPlay: 0
+  useTargetAsV3: 0
+  endValueFloat: 0
+  endValueV3: {x: 300, y: 0, z: 0}
   endValueV2: {x: 0, y: 0}
   endValueColor: {r: 1, g: 1, b: 1, a: 1}
   endValueString: 
@@ -4211,6 +4429,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1005236461}
   - {fileID: 508956974}
   - {fileID: 557261970}
   m_Father: {fileID: 1358574446}
@@ -4396,7 +4615,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1005236461}
   - {fileID: 793454355}
   - {fileID: 1031161182}
   m_Father: {fileID: 1358574446}
@@ -4753,7 +4971,7 @@ GameObject:
   - component: {fileID: 6032804958422910910}
   - component: {fileID: 3877906087504226672}
   m_Layer: 0
-  m_Name: GoldSword
+  m_Name: GoldGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4782,14 +5000,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242684959133583246}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0001526886, y: -0.0001527915, z: -0.70723027, w: 0.7069833}
-  m_LocalPosition: {x: -0, y: -12.451, z: 0}
-  m_LocalScale: {x: 1.1768, y: 1.1768, z: 1.1768}
+  m_LocalRotation: {x: 0.65325254, y: 0.27069584, z: -0.2710663, w: 0.6530758}
+  m_LocalPosition: {x: -0, y: -12.73, z: 0}
+  m_LocalScale: {x: 0.833551, y: 0.833551, z: 0.833551}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4006262923722399663}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -0.025, z: -90.02}
+  m_LocalEulerAnglesHint: {x: 89.972, y: 0, z: -45.083}
 --- !u!114 &712442794028982839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9687,7 +9905,7 @@ Transform:
   m_GameObject: {fileID: 1627720241089129430}
   serializedVersion: 2
   m_LocalRotation: {x: 0.013698698, y: 0.648, z: 0.761448, w: 0.010258044}
-  m_LocalPosition: {x: 0.437, y: 0.394, z: 0.252}
+  m_LocalPosition: {x: -0.095, y: 0.049, z: 0.252}
   m_LocalScale: {x: 0.3535689, y: 0.3535689, z: 0.35356897}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9703,7 +9921,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242684959133583246}
-  m_Mesh: {fileID: 4300000, guid: f1d84cc28597f5641a3d9cbc4df7e306, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 44cb397c8b73c2f40bfa05c2199ffa2b, type: 3}
 --- !u!1 &5103664098855359936
 GameObject:
   m_ObjectHideFlags: 0
@@ -14491,7 +14709,7 @@ MonoBehaviour:
   countdownTimer: {fileID: 1961502068}
   targetPosition: {x: 0, y: 10, z: 0}
   moveDuration: 1
-  targetScale: {x: 2, y: 2, z: 2}
+  targetScale: {x: 5, y: 5, z: 5}
   scaleDuration: 1
   winUI: {fileID: 1204772159}
   rb: {fileID: 3877906087504226672}
@@ -14516,8 +14734,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.2, y: 0.3, z: 1.0029228}
-  m_Center: {x: 0.27, y: 0.36, z: 0.19}
+  m_Size: {x: 0.63, y: 0.47, z: 0.27}
+  m_Center: {x: -0.05, y: 0.07, z: -0.01}
 --- !u!199 &6447531638071001688
 ParticleSystemRenderer:
   serializedVersion: 6
