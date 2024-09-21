@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: cc
+  companyName: Childish Colors
   productName: Emoji Match 3D
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -163,6 +163,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.cc.emojimatch3d
     Standalone: com.DefaultCompany.2DProject
+    iPhone: com.ChildishColors.EmojiMatch3D
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -930,4 +931,4 @@ PlayerSettings:
   hmiLoadingImage: {fileID: 0}
   platformRequiresReadableAssets: 0
   virtualTexturingSupportEnabled: 0
-  insecureHttpOption: 0
+  insecureHttpOption: 2

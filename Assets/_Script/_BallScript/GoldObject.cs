@@ -20,6 +20,7 @@ public class GoldObject : MonoBehaviour
 
     private void Start()
     {
+        transform.localScale = new Vector3(1, 1, 1);
         isClickable = true;
     }
     // Level completion logic
