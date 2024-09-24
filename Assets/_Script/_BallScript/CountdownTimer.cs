@@ -6,11 +6,12 @@ using DG.Tweening;
 public class CountdownTimer : MonoBehaviour
 {
     [SerializeField] private GoldObject goldObject;
-
+    [SerializeField] private LevelManager levelManager;
     public float countdownTime = 30f;
     public TextMeshProUGUI countdownText;
     public bool isCountdownRunning = true;
     [SerializeField] private GameObject loseUI;
+    private bool isUserCompleteLevel;
 
     public float remainingTime; // Store remaining time here
     private bool isGameComplete = false; // Track if the game is completed
@@ -59,6 +60,9 @@ public class CountdownTimer : MonoBehaviour
 
     public void CompleteGame()
     {
+        float score = BallCounterManager.Instance.destroyedBallCount;
+
+        TinySauce.OnGameFinished(isUserCompleteLevel,score,levelManager.levelName);
         DraggableBall.isGameCompleted = true;
         isGameComplete = true; // Mark the game as complete
         StopCountdown();
@@ -70,7 +74,7 @@ public class CountdownTimer : MonoBehaviour
         isCountdownRunning = false;
     }
 
-    private void GameOver()
+    public void GameOver()
     {
         // Disable dragging and clickable
         goldObject.isClickable = false;

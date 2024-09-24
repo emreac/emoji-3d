@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa11ec82e9746928e211e7f096812ca, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier: 
+  gameAnalyticsIosGameKey: a921057eeee5c9a3476acf0fae9c3bc7
+  gameAnalyticsIosSecretKey: 1ca31e41447a296a184737d6767df78329206ad2
+  gameAnalyticsAndroidGameKey: 
+  gameAnalyticsAndroidSecretKey: 
+  facebookAppId: 1274713993693162
+  facebookClientToken: 64020e6d4ed0cb064e7ded5f7e7a378d
+  adjustIOSToken: da8bxanm1mv4
+  adjustAndroidToken: 
+  EditorIdfa: 8df87c76-34e9-47b8-97c5-81f2a8da0c07
+  UseRemoteConfig: 0
+  UseVoodooAnalytics: 1
+  companyName: Childish Colors
+  privacyPolicyURL: https://childishcolors.com/emoji3dmatch.html
+  developerContactEmail: childishcolors@gmail.com

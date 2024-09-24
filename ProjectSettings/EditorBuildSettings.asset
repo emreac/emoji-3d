@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/VoodooPackages/TinySauce/Preload/Scene/TSPreloadScene.unity
+    guid: bd3e77c0fce3d499b809746835c3d75d
+  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 6c2a3f788bb616641bfbc4a7ace82dd3
   - enabled: 1
@@ -26,4 +29,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level7.unity
     guid: 2c983a2d1f685894dacb50c3a7668ca9
+  - enabled: 1
+    path: Assets/Scenes/Level8.unity
+    guid: 89270ed864440734d8902d0c3ff80c8e
+  - enabled: 1
+    path: Assets/Scenes/Level9.unity
+    guid: 5f9da5c7cd34e3b45bd83eecea4a7906
+  - enabled: 1
+    path: Assets/Scenes/Level10.unity
+    guid: 92c84711b446e2a448d845d8eb0164e4
+  - enabled: 1
+    path: Assets/Scenes/Level11.unity
+    guid: ad35b7152d5ad2448b4c2b6ed3b8019b
+  - enabled: 1
+    path: Assets/Scenes/Level12.unity
+    guid: c97cdb51278516b42bf22773b32fb4f3
+  - enabled: 1
+    path: Assets/Scenes/Level13.unity
+    guid: 05de675527b9a2a498705b92af055405
   m_configObjects: {}

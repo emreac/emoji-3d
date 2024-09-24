@@ -5,9 +5,10 @@ using DG.Tweening;
 
 public class BallCounterManager : MonoBehaviour
 {
+    
     [SerializeField] private PopSoundManager popSound;
     public static BallCounterManager Instance;
-    private int destroyedBallCount = 0;
+    public int destroyedBallCount = 0;
     public TextMeshProUGUI ballCounterText;
     
   

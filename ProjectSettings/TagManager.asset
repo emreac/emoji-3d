@@ -18,6 +18,14 @@ TagManager:
   - YellowLove
   - BrawnBall
   - WhiteBall
+  - Fruit
+  - Meat
+  - Donat
+  - Steak
+  - Asian
+  - Coconat
+  - MineBomb
+  - cacti
   layers:
   - Default
   - TransparentFX

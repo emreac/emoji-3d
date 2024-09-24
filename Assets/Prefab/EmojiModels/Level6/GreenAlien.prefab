@@ -182,5 +182,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9f7a50648cd0284bb6cc222a7a52d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  splashEffectPrefab: {fileID: 8680598818964007281, guid: 6a79abed48566e24c83dc9da0dde62f2, type: 3}
+  splashEffectPrefab: {fileID: 8680598818964007281, guid: dc5dad69ad05f3f4ebe4f323b7a7336b, type: 3}
   hasBeenMoved: 0

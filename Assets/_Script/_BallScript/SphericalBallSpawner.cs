@@ -3,7 +3,7 @@ using UnityEngine;
 public class SphericalBallSpawner : MonoBehaviour
 {
 
-    [SerializeField] private Animator fadeInanimator;
+    //[SerializeField] private Animator fadeInanimator;
     public GameObject[] ballPrefabs; // The ball prefab to instantiate
     public int numberOfBalls = 20; // Number of balls to instantiate
     public float sphereRadius = 5f; // Radius of the sphere
@@ -18,7 +18,7 @@ public class SphericalBallSpawner : MonoBehaviour
     void Start()
     {
 
-        fadeInanimator.SetBool("fadeInStart", true);
+        //fadeInanimator.SetBool("fadeInStart", true);
         Physics.gravity *= gravityModifier;
         SpawnBallsInSphere();
         ResetGravity();
